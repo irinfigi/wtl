@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>CURRENT DATE: </title>
+</head>
+  
+<body>
+    <b> CURRENT DATE: </b>
+      
+<p> Current Date Is: <span class="output"></span></p>
+  
+    <button onclick="getCurrentDate()">Current Date</button>
+      
+    <script type="text/javascript">
+    function getCurrentDate() {
+        let date = new Date().toDateString();
+        document.querySelector('.output').textContent = date;
+    }
+    </script>
+</body>
+  
+</html>
